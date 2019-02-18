@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_registration"
+    tools:context=".MainActivity">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Firstname_TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+
+
+        android:layout_marginRight="16dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/Firstname_TextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Firstname"
+            android:inputType="text" />
+        <requestFocus />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Lastname_TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Firstname_TextInputLayout"
+        android:layout_marginRight="16dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/Lasttname_TextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lastname"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordr_TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Lastname_TextInputLayout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+
+        app:passwordToggleEnabled="true">
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/passwordr_TextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Emailr_TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/passwordr_TextInputLayout"
+        android:layout_marginRight="16dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/Emailr_TextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email(example@gmail.com)"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Phone_TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Emailr_TextInputLayout"
+        android:layout_marginRight="16dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/Phone_TextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/registerbuttonstyle"
+        android:textColor="#fff"
+        android:layout_marginLeft="64dp"
+        android:layout_below="@id/Phone_TextInputLayout"
+        android:text="SUBMIT" />
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/btnSubmit"
+        android:background="@drawable/loginbuttonstyle"
+        android:drawableRight="@drawable/ic_send_black_24dp"
+        android:layout_below="@id/Phone_TextInputLayout"
+        android:drawablePadding="10dp"
+        android:text="GO"
+
+
+        android:textColor="#fff" />
+
+</RelativeLayout>
